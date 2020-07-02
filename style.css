@@ -53,6 +53,30 @@ body {
 }
 
 p {
-  width: 33%;
+  /* width: 33%; */
   display: inline-flex;
 }
+
+#projects {
+  height: 100vh;
+  display: flex;
+}
+
+iframe {
+  display: flex;
+}
+
+.proj {
+  margin-top: 3em;
+  margin-left: 2em;
+  width: 30%;
+}
+
+.smaller {
+  width: 25em;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.smaller:hover {
+  transform: scale(1.5); 
