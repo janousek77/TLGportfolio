@@ -1,0 +1,30 @@
+#profile_pic {
+  width: 35vw;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+}
+.links {
+  text-align: center;
+}
+.centered {
+  text-align: center;
+}
+.icon {
+  margin-left: 1em;
+}
+.education {
+  float: left;
+}
+.languages {
+  float: left;
+  margin-left: 2em;
+}
+body {
+  background-color: gainsboro;
+}
+
+.nav-wrapper {
+  background-color: #c29b9b;
+}
