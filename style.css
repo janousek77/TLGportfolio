@@ -2,29 +2,57 @@
   width: 35vw;
   border-radius: 10px;
 }
+
 h1 {
   text-align: center;
 }
+
 .links {
   text-align: center;
 }
-.centered {
+
+#about-me {
   text-align: center;
+  margin-top: 5em;
+  height: 100vh;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .icon {
   margin-left: 1em;
 }
+
+#experience {
+  height: 100vh;
+}
+
 .education {
   float: left;
-}
-.languages {
-  float: left;
+  margin-top: 3em;
   margin-left: 2em;
 }
+
+.languages {
+  float: left;
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
 body {
+  height: 100%;
   background-color: gainsboro;
 }
 
 .nav-wrapper {
   background-color: #c29b9b;
+}
+
+p {
+  width: 33%;
+  display: inline-flex;
 }

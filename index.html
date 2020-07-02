@@ -11,27 +11,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </head>
+
   <body>
     <header>
       <nav>
         <div class="nav-wrapper">
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#">Sass</a></li>
-            <li><a href="#">Components</a></li>
-            <li><a href="#">JavaScript</a></li>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="left hide-on-med-and-down">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#">Projects</a></li>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Sass</a></li>
-        <li><a href="#">Components</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">Mobile</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Projects</a></li>
       </ul>
     </header>
-    <div class="centered">
+
+    <div id="about-me">
       <h1>Chris Janousek's Portfolio</h1>
       <img id="profile_pic" src="./resources/me.png" alt="" />
       <div class="links">
@@ -56,47 +73,54 @@
           ><img class="icon" src="./resources/github.png" alt=""
         /></a>
       </div>
-    </div>
-    <div class="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>School:</strong> University of Washington Bothell</li>
-        <ul>
-          <li><strong>Degree:</strong> Bachelor's</li>
-          <li>
-            <strong>Major: </strong> Computer Science and Software Engineering
-          </li>
-          <li><strong>Dates:</strong> 2019 - 2021</li>
-        </ul>
-        <br />
-        <li><strong>School:</strong> Bellevue College</li>
-        <ul>
-          <li><strong>Degree:</strong> Associate's</li>
-          <li><strong>Major:</strong> Arts and Sciences</li>
-          <li><strong>Dates:</strong> 2017 - 2018</li>
-        </ul>
-        <br />
-        <li><strong>School:</strong> Northwest Florida State College</li>
-        <ul>
-          <li><strong>Degree:</strong> Associate's</li>
-          <li><strong>Major:</strong> Industrial Management Technology</li>
-          <li><strong>Dates:</strong> 2013 - 2015</li>
-        </ul>
-      </ul>
-    </div>
-    <div class="languages">
-      <h2>Languages</h2>
-      <ul>
-        <li>Javascript(MERN Stack)</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>C#</li>
-        <li>C++</li>
-        <li>68k Assembly</li>
-        <li>SQL</li>
-      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        laudantium dolores eveniet consectetur ex omnis quo tempora sunt hic
+        illo? Ipsam temporibus cumque ad minus corrupti iste culpa molestias ab!
+      </p>
     </div>
 
+    <div id="experience">
+      <div class="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>School:</strong> University of Washington Bothell</li>
+          <ul>
+            <li><strong>Degree:</strong> Bachelor's</li>
+            <li>
+              <strong>Major: </strong> Computer Science and Software Engineering
+            </li>
+            <li><strong>Dates:</strong> 2019 - 2021</li>
+          </ul>
+          <br />
+          <li><strong>School:</strong> Bellevue College</li>
+          <ul>
+            <li><strong>Degree:</strong> Associate's</li>
+            <li><strong>Major:</strong> Arts and Sciences</li>
+            <li><strong>Dates:</strong> 2017 - 2018</li>
+          </ul>
+          <br />
+          <li><strong>School:</strong> Northwest Florida State College</li>
+          <ul>
+            <li><strong>Degree:</strong> Associate's</li>
+            <li><strong>Major:</strong> Industrial Management Technology</li>
+            <li><strong>Dates:</strong> 2013 - 2015</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>Javascript(MERN Stack)</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>68k Assembly</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
