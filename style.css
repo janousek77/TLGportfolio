@@ -25,20 +25,33 @@ header {
 
 .icon {
   margin-left: 1em;
+  opacity: 60%;
+}
+
+.icon:hover {
+  opacity: 100%;
 }
 
 #experience {
   height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 662px) {
+  #experience {
+    height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  #experience {
+    height: 200vh;
+  }
+}
 .education {
-  float: left;
-  margin-top: 3em;
-  margin-left: 2em;
-}
-
-.languages {
-  float: left;
+  /* float: left; */
   margin-top: 3em;
   margin-left: 2em;
 }
@@ -74,9 +87,27 @@ iframe {
 
 .smaller {
   width: 25em;
-  transition: transform .2s; /* Animation */
+  transition: transform 0.2s; /* Animation */
   margin: 0 auto;
 }
 
 .smaller:hover {
-  transform: scale(1.5); 
+  transform: scale(1.5);
+}
+
+.social-footer {
+  position: fixed;
+  bottom: 0;
+  background: #8a8a8a;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3em;
+}
+
+.menu {
+  display: flex;
+  margin-right: 1em;
+}
